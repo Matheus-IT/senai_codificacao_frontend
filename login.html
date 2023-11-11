@@ -48,19 +48,19 @@
         <section id="section-login">
             <h1>Login</h1>
             <div class="d-flex justify-content-center">
-                <form method="post" action="" id="login">
+                <form method="post" action="" id="login-form">
                     <p class="mb-1">
-                        <label for="usuario">Nome: </label>
-                        <input id="usuario" name="usuario" required="required" type="text"
+                        <label for="username">Nome: </label>
+                        <input id="username" name="username" required="required" type="text"
                             placeholder="Insira o seu usuário" class="form-control" />
                     </p>
                     <p>
-                        <label for="senha">Senha: </label>
-                        <input id="senha" name="senha" required="required" type="password"
+                        <label for="password">Senha: </label>
+                        <input id="password" name="password" required="required" type="password"
                             placeholder="Insira a sua senha" class="form-control" />
                     </p>
                     <p>
-                        <input type="button" value="login" class="btn btn-primary" id="bt-login" onclick="login()" />
+                        <input type="submit" value="login" class="btn btn-primary" id="bt-login"/>
                     </p>
                 </form>
             </div>

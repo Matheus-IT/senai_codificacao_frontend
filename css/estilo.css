@@ -74,8 +74,14 @@ footer p {
 #section-login h1 {
 	text-align: center;
 }
+
 #section-login input {
 	width: 100%;
+}
+
+#section-login #botao-cadastrar {
+	display: block;
+	margin: auto;
 }
 
 /* Formulário de cadastro*/
@@ -83,9 +89,33 @@ footer p {
 	padding: 5px;
 	text-align: center;
 	background-color: #fff;
+	display: none;
 }
 
 #form-cadastrar {
 	padding: 50px;
-	display: none;
+}
+#section-cadastro #back-to-login {
+	display: block;
+}
+
+@media screen and (min-width: 576px) {
+	#section-cadastro #back-to-login {
+		margin-left: 10%;
+	}
+}
+@media screen and (min-width: 768px) {
+	#section-cadastro #back-to-login {
+		margin-left: 20%;
+	}
+}
+@media screen and (min-width: 992px) {
+	#section-cadastro #back-to-login {
+		margin-left: 26%;
+	}
+}
+@media screen and (min-width: 1200px) {
+	#section-cadastro #back-to-login {
+		margin-left: 38%;
+	}
 }

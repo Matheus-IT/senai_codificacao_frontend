@@ -1,3 +1,8 @@
+const users = [
+	{username: 'matheus', password: 'password123'},
+	{username: 'admin', password: '123'},
+];
+
 //efeito do botão voltar ao Topo
 $('#back-to-top').on('click', goToTop);
 
@@ -11,10 +16,6 @@ function goToTop() {
 
 //Validação de Login
 $('#login-form').on('submit', handleLogin);
-const users = [
-	{username: 'matheus', password: 'password123'},
-	{username: 'admin', password: '123'},
-];
 
 function handleLogin(e) {
 	e.preventDefault();
@@ -30,4 +31,21 @@ function handleLogin(e) {
 		alert('Accesso negado. Dados incorretos');
 	}
 }
-//Ativar alert no botão cadastrar
+
+//Validação cadastrar
+$('#botao-cadastrar').on('click', () => {
+	$('#section-login').slideUp();
+	$('#section-cadastro').slideDown();
+});
+
+$('#back-to-login').on('click', () => {
+	$('#section-cadastro').slideUp();
+	$('#section-login').slideDown();
+});
+
+$('#register-form').on('submit', handleRegister);
+
+function handleRegister(e) {
+	e.preventDefault();
+	window.location.href = 'index.html';
+}
